@@ -1,3 +1,4 @@
+<?php // Content for testing ?>
 <?php if(!isset($_GET['content'])): ?>
     Content
 <?php else: ?>

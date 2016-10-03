@@ -21,9 +21,6 @@ html, body {
     - height: 50px; 
         It's height is not important to be static. It can be as high as the content in it.
         The height setup is optional.
-
-    - height: 50px; 
-        It's height is not important to be st
 */
 .site.header {
     height: 50px;
@@ -32,6 +29,13 @@ html, body {
     background: #f77;
 }
 
+/*
+    - position: relative; 
+        Important, because its children must be compared to this element.
+
+    - min-height: 100%; 
+        The element minimum height must be 100%.
+*/
 .wrapper {
     position: relative;
     min-height: 100%;
@@ -40,10 +44,29 @@ html, body {
     background: #7f7;
 }
 
+/*
+    - padding-bottom: 50px; 
+        This must be equal to the height of footer (with margin, border and so on...).
+*/
 .site.content {
     padding-bottom: 50px;
 }
 
+/*
+    - position: absolute; 
+        Important, because this element must be positioned compared to the wrapper
+        to the bottom.
+
+    - bottom: 0; 
+        This places the footer element to the bottom of screen.
+
+    - width: 100%;
+        The element on absolute position will be as wide as its content.
+        That's why we have to make it as wide as the screen.
+
+    - height: 50px;
+        The footer's hegiht I talked about before.
+*/
 .site.footer {
     position: absolute;
     bottom: 0;
