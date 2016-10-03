@@ -1,0 +1,55 @@
+/*
+    - position: relative;
+        Important to use, because each HTML element wouldn't inherit the 
+        properties from it.
+
+    - height: 100%;
+        Important to use, because the HTML content would be that high as the content
+        and this way the child elements couldn't use 100% height properties.
+
+    - margin: 0;
+        Optional, but if you don't set it to 0, then you have to calculate the 
+        margin-bottom substraction with the default/set html/body margin.
+*/
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+/*
+    - height: 50px; 
+        It's height is not important to be static. It can be as high as the content in it.
+        The height setup is optional.
+
+    - height: 50px; 
+        It's height is not important to be st
+*/
+.site.header {
+    height: 50px;
+    
+    /* Representative property, not IMPORTANT! */
+    background: #f77;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+        
+    /* Representative property, not IMPORTANT! */
+    background: #7f7;
+}
+
+.site.content {
+    padding-bottom: 50px;
+}
+
+.site.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+        
+    /* Representative property, not IMPORTANT! */
+    background: #77f;
+}
